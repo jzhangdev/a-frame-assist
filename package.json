@@ -1,0 +1,40 @@
+{
+  "name": "a-frame-assist",
+  "version": "0.0.1",
+  "description": "VS Code Extension for A-Frame",
+  "scripts": {
+    "build:html-data": "tsx scripts/generate-html-data.ts"
+  },
+  "keywords": [
+    "a-frame",
+    "html",
+    "extension",
+    "vscode"
+  ],
+  "repository": {
+    "url": "https://github.com/jzhangdev/a-frame-assist"
+  },
+  "author": "jzhangdev<zhangjie9477@gmail.com>",
+  "publisher": "jzhangdev",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jsonfile": "^6.1.4",
+    "@types/marked": "^6.0.0",
+    "@types/node": "^20.14.12",
+    "aframe": "1.6.0",
+    "jsonfile": "^6.1.0",
+    "marked": "^13.0.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "contributes": {
+    "html": {
+      "customData": [
+        "./a-frame.html-data.json"
+      ]
+    }
+  }
+}

@@ -1,0 +1,4857 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "a-box",
+      "description": "---\ntitle: <a-box>\nsection_title: Primitives\ntype: primitives\nlayout: docs\nparent_section: docs\norder: 1\nsection_order: 5\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\nThe box primitive creates shapes such as boxes, cubes, or walls.\n\n## Example\n\n```html\n<a-assets>\n  <img id=\"texture\" src=\"texture.png\">\n</a-assets>\n\n<!-- Basic box. -->\n<a-box color=\"tomato\" depth=\"2\" height=\"4\" width=\"0.5\"></a-box>\n\n<!-- Textured box. -->\n<a-box src=\"#texture\"></a-box>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| depth                            | geometry.depth                         | 1             |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | geometry.height                        | 1             |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments-depth                   | geometry.segmentsDepth                 | 1             |\n| segments-height                  | geometry.segmentsHeight                | 1             |\n| segments-width                   | geometry.segmentsWidth                 | 1             |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| width                            | geometry.width                         | 1             |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "depth",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.depth"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-depth",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsDepth"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-width",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsWidth"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-camera",
+      "description": "---\ntitle: <a-camera>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-camera.js\n---\n\nThe camera primitive determines what the user sees. We can change the viewport\nby modifying the camera entity's position and rotation.\n\n## Example\n\n```html\n<a-scene>\n  <a-box></a-box>\n  <a-camera></a-camera>\n</a-scene>\n```\n\n## Attributes\n\n| Attribute             | Component Mapping              | Default Value |\n|-----------------------|--------------------------------|---------------|\n| far                   | camera.far                     | 10000         |\n| fov                   | camera.fov                     | 80            |\n| look-controls-enabled | look-controls.enabled          | true          |\n| near                  | camera.near                    | 0.5           |\n| reverse-mouse-drag    | look-controls.reverseMouseDrag | false         |\n| wasd-controls-enabled | wasd-controls.enabled          | true          |\n\n## Manually Positioning the Camera\n\nA camera is situated by default at the average height of human eye level (1.6\nmeters). When used with controls that receive rotation or position (e.g. from a\nVR device) this position will be overridden.\n\n```html\n<!-- Place camera at ground level (will be overridden by VR devices) -->\n<a-camera position=\"0 0 0\"></a-camera>\n```\n\nWhen moving or rotating the camera relative to the scene, use a camera rig.\nBy doing so, the camera's height offset can be updated by roomscale devices,\nwhile still allowing the tracked area to be moved independently around the\nscene.\n\n```html\n<a-entity id=\"rig\" position=\"25 10 0\">\n  <a-camera id=\"camera\"></a-camera>\n</a-entity>\n```\n",
+      "attributes": [
+        {
+          "name": "far",
+          "values": [
+            {
+              "name": "10000"
+            }
+          ],
+          "description": "Component Mapping: camera.far"
+        },
+        {
+          "name": "fov",
+          "values": [
+            {
+              "name": "80"
+            }
+          ],
+          "description": "Component Mapping: camera.fov"
+        },
+        {
+          "name": "look-controls-enabled",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: look-controls.enabled"
+        },
+        {
+          "name": "near",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: camera.near"
+        },
+        {
+          "name": "reverse-mouse-drag",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: look-controls.reverseMouseDrag"
+        },
+        {
+          "name": "wasd-controls-enabled",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: wasd-controls.enabled"
+        }
+      ]
+    },
+    {
+      "name": "a-circle",
+      "description": "---\ntitle: <a-circle>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\nThe circle primitive creates circles surfaces using the [geometry][geometry]\ncomponent with the type set to `circle`.\n\n## Example\n\n```html\n<a-scene>\n  <a-assets>\n    <img id=\"platform\" src=\"platform.jpg\">\n  </a-assets>\n\n  <!-- Basic circle. -->\n  <a-circle color=\"#CCC\" radius=\"20\"></a-circle>\n\n  <!-- Textured circle parallel to ground. -->\n  <a-circle src=\"#platform\" radius=\"50\" rotation=\"-90 0 0\"></a-circle>\n</a-scene>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| radius                           | geometry.radius                        | 1             |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments                         | geometry.segments                      | 32            |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| theta-length                     | geometry.thetaLength                   | 360           |\n| theta-start                      | geometry.thetaStart                    | 0             |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n\n## Parallelizing to the Ground\n\nTo make a circle parallel to the ground, rotate it around the X-axis:\n\n```html\n<a-circle rotation=\"-90 0 0\"></a-circle>\n```\n\n[geometry]: ../components/geometry.md\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments",
+          "values": [
+            {
+              "name": "32"
+            }
+          ],
+          "description": "Component Mapping: geometry.segments"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "theta-length",
+          "values": [
+            {
+              "name": "360"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaLength"
+        },
+        {
+          "name": "theta-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaStart"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-cone",
+      "description": "---\ntitle: <a-cone>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\nThe cone primitive creates a cone shape.\n\n## Example\n\n```html\n<a-assets>\n  <img id=\"texture\" src=\"texture.png\">\n</a-assets>\n\n<!-- Basic cone. -->\n<a-cone color=\"tomato\" radius-bottom=\"2\" radius-top=\"0.5\"></a-cone>\n\n<!-- Textured box. -->\n<a-cone src=\"#texture\"></a-cone>\n```\n\n## Attributes\n\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | geometry.height                        | 1             |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| open-ended                       | geometry.openEnded                     | false         |\n| radius-bottom                    | geometry.radiusBottom                  | 1             |\n| radius-top                       | geometry.radiusTop                     | 0.8           |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments-height                  | geometry.segmentsHeight                | 18            |\n| segments-radial                  | geometry.segmentsRadial                | 36            |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| theta-length                     | geometry.thetaLength                   | 360           |\n| theta-start                      | geometry.thetaStart                    | 0             |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "open-ended",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: geometry.openEnded"
+        },
+        {
+          "name": "radius-bottom",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radiusBottom"
+        },
+        {
+          "name": "radius-top",
+          "values": [
+            {
+              "name": "0.8"
+            }
+          ],
+          "description": "Component Mapping: geometry.radiusTop"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "18"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-radial",
+          "values": [
+            {
+              "name": "36"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsRadial"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "theta-length",
+          "values": [
+            {
+              "name": "360"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaLength"
+        },
+        {
+          "name": "theta-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaStart"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-cubemap",
+      "description": "---\ntitle: <a-cubemap>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/core/a-cubemap.js\n---\n\n[material]: ../components/material.md#environment-maps\n[probe-light]: ../components/light.md#probe\n[cube-texture]: https://threejs.org/docs/#api/en/textures/CubeTexture\n\nThe cubemap primitive is used to create a [CubeTexture][cube-texture] environment map from 6 square images.\n\nThis can then be used as an [envMap](material.html#built_in_materials_envmap) in the [material component][material], or on a [probe light][probe-light].\n\n## Example\n\n```html\n<a-scene>\n  <a-assets>\n    <!-- Cubemap asset -->\n    <a-cubemap id=\"reflection\">\n      <img src=\"milkyway/px.jpg\">\n      <img src=\"milkyway/nx.jpg\">\n      <img src=\"milkyway/py.jpg\">\n      <img src=\"milkyway/ny.jpg\">\n      <img src=\"milkyway/pz.jpg\">\n      <img src=\"milkyway/nz.jpg\">\n    </a-cubemap>\n  </a-assets>\n\n  <!-- Sphere with reflection. -->\n  <a-sphere position=\"0 1 -2\"\n            material=\"envMap:#reflection; metalness:1.0; roughness:0.0\">\n  </a-sphere>\n</a-scene>\n```\n\n## Attributes\n\nNo attributes.  The cubemap is configured by creating 6 child elements beneath it.\n\n\n\n"
+    },
+    {
+      "name": "a-cursor",
+      "description": "---\ntitle: <a-cursor>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-cursor.js\n---\n\nThe cursor primitive is a reticle that allows for clicking and basic\ninteractivity with a scene on devices that do not have a hand controller. The\ndefault appearance is a ring geometry. The cursor is usually placed as a child\nof the camera.\n\nRead the [cursor component documentation](../components/cursor.md) for detailed information about how the cursor works and how to use the cursor.\n\n## Example\n\n```html\n<a-scene>\n  <a-camera>\n    <a-cursor></a-cursor>\n  </a-camera>\n\n  <a-box></a-box>\n</a-scene>\n```\n\n## Attributes\n\n| Attribute    | Component Mapping  | Default Value |\n|--------------|--------------------|---------------|\n| far          | raycaster.far      | 1000          |\n| fuse         | cursor.fuse        | false         |\n| fuse-timeout | cursor.fuseTimeout | 1500          |\n| interval     | raycaster.interval | 100           |\n| objects      | raycaster.objects  | 100           |\n",
+      "attributes": [
+        {
+          "name": "far",
+          "values": [
+            {
+              "name": "1000"
+            }
+          ],
+          "description": "Component Mapping: raycaster.far"
+        },
+        {
+          "name": "fuse",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: cursor.fuse"
+        },
+        {
+          "name": "fuse-timeout",
+          "values": [
+            {
+              "name": "1500"
+            }
+          ],
+          "description": "Component Mapping: cursor.fuseTimeout"
+        },
+        {
+          "name": "interval",
+          "values": [
+            {
+              "name": "100"
+            }
+          ],
+          "description": "Component Mapping: raycaster.interval"
+        },
+        {
+          "name": "objects",
+          "values": [
+            {
+              "name": "100"
+            }
+          ],
+          "description": "Component Mapping: raycaster.objects"
+        }
+      ]
+    },
+    {
+      "name": "a-curvedimage",
+      "description": "---\ntitle: <a-curvedimage>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-curvedimage.js\n---\n\n\nThe curved image primitive creates images that bend around the user. Curved\nimages arranged around the camera can be pleasing for legibility since each\npixel sits at the same distance from the user. They can be a better choice than\nangled flat planes for complex layouts because they ensure a smooth surface\nrather than a series of awkward seams between planes.\n\nUnder the hood, a curved image is a double-sided open-ended cylinder with\ntextures mapped to the inside of the cylinder.\n\n## Example\n\n```html\n<a-scene>\n  <a-assets>\n    <img id=\"my-image\" src=\"image.png\">\n  </a-assets>\n\n  <!-- Using the asset management system. -->\n  <a-curvedimage src=\"#my-image\" height=\"3.0\" radius=\"5.7\" theta-length=\"72\"\n                 rotation=\"0 100 0\" scale=\"0.8 0.8 0.8\"></a-curvedimage>\n\n  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->\n  <a-curvedimage src=\"another-image.png\"></a-curvedimage>\n</a-scene>\n```\n\n## Attributes\n\n| Attribute       | Component Mapping       | Default Value |\n| --------        | -----------------       | ------------- |\n| color           | material.color          | #FFF          |\n| height          | geometry.height         | 1             |\n| metalness       | material.metalness      | 0             |\n| opacity         | material.opacity        | 1             |\n| open-ended      | geometry.openEnded      | true          |\n| radius          | geometry.radius         | 2             |\n| repeat          | material.repeat         | None          |\n| roughness       | material.roughness      | 0.5           |\n| segments-height | geometry.segmentsHeight | 18            |\n| segments-radial | geometry.segmentsRadial | 48            |\n| shader          | material.shader         | flat          |\n| side            | material.side           | double        |\n| src             | material.src            | None          |\n| theta-length    | geometry.thetaLength    | 270           |\n| theta-start     | geometry.thetaStart     | 0             |\n| transparent     | material.transparent    | true          |\n\n## Fine-Tuning\n\nEnsuring that the image is not distorted by stretching requires us to carefully\nset the `height`, `radius`, and `theta-length` attributes relative to the image\naspect ratio. \n\nAccording to this formula:\n\nS = r * θ\n\nWe need to calculate `r` or `θ` for `S` to match the `height` value preserving \nthe original aspect ratio of the image. In this formula, `θ` is set in radians \nand `radius` and `S` properties are set in meters.\n\n<p align=\"center\"><img width=\"350\" alt=\"Arc formula\" src=\"https://user-images.githubusercontent.com/21111451/46638723-e28f3800-cb27-11e8-9d6f-f8ddf5c87f62.png\"></p>\n\nIn degrees, `thetaStart` defines where to start the arc and `thetaLength` defines where the arc ends. \n\nOnce those values are fine-tuned to avoid distortion, we can use\n`scale` to safely adjust the distance of the curved image relative to the user.\n",
+      "attributes": [
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "opacity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.opacity"
+        },
+        {
+          "name": "open-ended",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: geometry.openEnded"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "18"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-radial",
+          "values": [
+            {
+              "name": "48"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsRadial"
+        },
+        {
+          "name": "shader",
+          "values": [
+            {
+              "name": "flat"
+            }
+          ],
+          "description": "Component Mapping: material.shader"
+        },
+        {
+          "name": "side",
+          "values": [
+            {
+              "name": "double"
+            }
+          ],
+          "description": "Component Mapping: material.side"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "theta-length",
+          "values": [
+            {
+              "name": "270"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaLength"
+        },
+        {
+          "name": "theta-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaStart"
+        },
+        {
+          "name": "transparent",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.transparent"
+        }
+      ]
+    },
+    {
+      "name": "a-cylinder",
+      "description": "---\ntitle: <a-cylinder>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\nThe cylinder primitive is used to create tubes and curved surfaces.\n\n## Examples\n\nThe cylinder primitive is versatile and can be used to create different kinds of shapes:\n\n```html\n<!-- Basic cylinder. -->\n<a-cylinder color=\"crimson\" height=\"3\" radius=\"1.5\"></a-cylinder>\n\n<!-- Hexagon. -->\n<a-cylinder color=\"cyan\" segments-radial=\"6\"></a-cylinder>\n\n<!-- Pac-man. -->\n<a-cylinder color=\"yellow\" theta-start=\"50\" theta-length=\"280\" side=\"double\"></a-cylinder>\n\n<!-- Green pipe. -->\n<a-cylinder color=\"green\" open-ended=\"true\"></a-cylinder>\n```\n\nIn degrees, `thetaStart` defines where to start the arc and `thetaLength` defines where the arc ends. \n\nAlso, we can create a tube by making the cylinder open-ended, which removes the top and bottom surfaces of the cylinder such that the inside is visible. Then, we need a double-sided material to render properly:\n\n```html\n<a-cylinder color=\"cyan\" material=\"side: double\" open-ended=\"true\" rotation=\"90 0 0\"></a-cylinder>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | geometry.height                        | 1             |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| open-ended                       | geometry.openEnded                     | false         |\n| radius                           | geometry.radius                        | 1             |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments-height                  | geometry.segmentsHeight                | 18            |\n| segments-radial                  | geometry.segmentsRadial                | 36            |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| theta-length                     | geometry.thetaLength                   | 360           |\n| theta-start                      | geometry.thetaStart                    | 0             |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "open-ended",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: geometry.openEnded"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "18"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-radial",
+          "values": [
+            {
+              "name": "36"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsRadial"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "theta-length",
+          "values": [
+            {
+              "name": "360"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaLength"
+        },
+        {
+          "name": "theta-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaStart"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-dodecahedron",
+      "description": "---\ntitle: <a-dodecahedron>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\n## Example\n\n```html\n<a-dodecahedron color=\"#FF926B\" radius=\"5\"></a-dodecahedron>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| open-ended                       | geometry.openEnded                     | false         |\n| radius-bottom                    | geometry.radiusBottom                  | 1             |\n| radius-top                       | geometry.radiusTop                     | 0.8           |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments-height                  | geometry.segmentsHeight                | 18            |\n| segments-radial                  | geometry.segmentsRadial                | 36            |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| theta-length                     | geometry.thetaLength                   | 360           |\n| theta-start                      | geometry.thetaStart                    | 0             |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "open-ended",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: geometry.openEnded"
+        },
+        {
+          "name": "radius-bottom",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radiusBottom"
+        },
+        {
+          "name": "radius-top",
+          "values": [
+            {
+              "name": "0.8"
+            }
+          ],
+          "description": "Component Mapping: geometry.radiusTop"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "18"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-radial",
+          "values": [
+            {
+              "name": "36"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsRadial"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "theta-length",
+          "values": [
+            {
+              "name": "360"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaLength"
+        },
+        {
+          "name": "theta-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaStart"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-gltf-model",
+      "description": "---\ntitle: <a-gltf-model>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-gltf-model.js\n---\n\nThe glTF model primitive displays a 3D glTF model created from a 3D\nmodeling program or downloaded from the web.\n\n## Example\n\n```html\n<a-scene>\n  <a-assets>\n    <a-asset-item id=\"tree\" src=\"tree.gltf\"></a-asset-item>\n  </a-assets>\n\n  <!-- Using the asset management system. -->\n  <a-gltf-model src=\"#tree\"></a-gltf-model>\n\n  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->\n  <a-gltf-model src=\"tree.gltf\"></a-gltf-model>\n</a-scene>\n```\n\n## Attribute\n\n[gltf]: ../components/gltf-model.md\n\n| Attribute | Component Mapping      | Default Value |\n|-----------|------------------------|---------------|\n| src       | [gltf-model][gltf].src | null          |\n",
+      "attributes": [
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "null"
+            }
+          ],
+          "description": "Component Mapping: [gltf-model][gltf].src"
+        }
+      ]
+    },
+    {
+      "name": "a-icosahedron",
+      "description": "---\ntitle: <a-icosahedron>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\n## Example\n\n```html\n<a-icosahedron color=\"#FF926B\" radius=\"5\"></a-icosahedron>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| detail                           | geometry.detail                        | 0             |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| radius                           | geometry.radius                        | 1             |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "detail",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.detail"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-image",
+      "description": "---\ntitle: <a-image>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-image.js\n---\n\nThe image primitive shows an image on a flat plane.\n\n## Example\n\n```html\n<a-scene>\n  <a-assets>\n    <img id=\"my-image\" src=\"image.png\">\n  </a-assets>\n\n  <!-- Using the asset management system. -->\n  <a-image src=\"#my-image\"></a-image>\n\n  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->\n  <a-image src=\"another-image.png\"></a-image>\n</a-scene>\n```\n\n## Attributes\n\n| Attribute       | Component Mapping       | Default Value |\n| --------        | -----------------       | ------------- |\n| color           | material.color          | #FFF          |\n| height          | geometry.height         | 1             |\n| metalness       | material.metalness      | 0             |\n| opacity         | material.opacity        | 1             |\n| repeat          | material.repeat         | None          |\n| roughness       | material.roughness      | 0.5           |\n| segments-height | geometry.segmentsHeight | 1             |\n| segments-width  | geometry.segmentsWidth  | 1             |\n| shader          | material.shader         | flat          |\n| side            | material.side           | front         |\n| src             | material.src            | None          |\n| transparent     | material.transparent    | true          |\n| width           | geometry.width          | 1             |\n\n## Fine-Tuning\n\nEnsuring that the image is not distorted by stretching requires us to appropriately set the `width` and `height` preserving the original aspect ratio of the image. This properties are set in meters, don't confuse with pixels.\n\nFor example, a 2:1 image:\n\n```html\n<a-image src=\"#logo\" width=\"3\" height=\"1.5\"></a-image>\n```\n",
+      "attributes": [
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "opacity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.opacity"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-width",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsWidth"
+        },
+        {
+          "name": "shader",
+          "values": [
+            {
+              "name": "flat"
+            }
+          ],
+          "description": "Component Mapping: material.shader"
+        },
+        {
+          "name": "side",
+          "values": [
+            {
+              "name": "front"
+            }
+          ],
+          "description": "Component Mapping: material.side"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "transparent",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.transparent"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.width"
+        }
+      ]
+    },
+    {
+      "name": "a-light",
+      "description": "---\ntitle: <a-light>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-light.js\n---\n\nA light changes the lighting and shading of the scene.\n\n## Examples\n\n```html\n<!-- Red directional light shining from the top left. -->\n<a-light color=\"red\" position=\"-1 1 0\"></a-light>\n\n<!-- Blue point light, 5 meters in the air. -->\n<a-light type=\"point\" color=\"blue\" position=\"0 5 0\"></a-light>\n\n<!-- Dim ambient lighting. -->\n<a-light type=\"ambient\" color=\"#222\"></a-light>\n\n<!-- Probe light using the #pisa environment map -->\n<a-assets>\n\t<a-cubemap id=\"pisa\">\n\t<img src=\"https://threejs.org/examples/textures/cube/pisa/px.png\">\n\t<img src=\"https://threejs.org/examples/textures/cube/pisa/nx.png\">\n\t<img src=\"https://threejs.org/examples/textures/cube/pisa/py.png\">\n\t<img src=\"https://threejs.org/examples/textures/cube/pisa/ny.png\">\n\t<img src=\"https://threejs.org/examples/textures/cube/pisa/pz.png\">\n\t<img src=\"https://threejs.org/examples/textures/cube/pisa/nz.png\">\n\t</a-cubemap>\n</a-assets>\n\n<a-light type=\"probe\" envMap=\"#pisa\"></a-light>\n```\n\n## Attributes\n\n| Attribute    | Component Mapping | Default Value |\n| ------------ | ----------------- | ------------- |\n| angle        | light.angle       | 60            |\n| color        | light.color       | #fff          |\n| decay        | light.decay       | 1             |\n| distance     | light.distance    | 0.0           |\n| envmap       | light.envMap      | null          |\n| ground-color | light.groundColor | #fff          |\n| intensity    | light.intensity   | 1.0           |\n| penumbra     | light.penumbra    | 0.0           |\n| type         | light.type        | directional   |\n| target       | light.target      | null          |\n\n## Differences with the Default Lighting\n\nWhen we add a light, A-Frame will remove the default lighting setup (i.e., one\ndirectional light from the top-left, and one small ambient light).\n",
+      "attributes": [
+        {
+          "name": "angle",
+          "values": [
+            {
+              "name": "60"
+            }
+          ],
+          "description": "Component Mapping: light.angle"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#fff"
+            }
+          ],
+          "description": "Component Mapping: light.color"
+        },
+        {
+          "name": "decay",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: light.decay"
+        },
+        {
+          "name": "distance",
+          "values": [
+            {
+              "name": "0.0"
+            }
+          ],
+          "description": "Component Mapping: light.distance"
+        },
+        {
+          "name": "envmap",
+          "values": [
+            {
+              "name": "null"
+            }
+          ],
+          "description": "Component Mapping: light.envMap"
+        },
+        {
+          "name": "ground-color",
+          "values": [
+            {
+              "name": "#fff"
+            }
+          ],
+          "description": "Component Mapping: light.groundColor"
+        },
+        {
+          "name": "intensity",
+          "values": [
+            {
+              "name": "1.0"
+            }
+          ],
+          "description": "Component Mapping: light.intensity"
+        },
+        {
+          "name": "penumbra",
+          "values": [
+            {
+              "name": "0.0"
+            }
+          ],
+          "description": "Component Mapping: light.penumbra"
+        },
+        {
+          "name": "type",
+          "values": [
+            {
+              "name": "directional"
+            }
+          ],
+          "description": "Component Mapping: light.type"
+        },
+        {
+          "name": "target",
+          "values": [
+            {
+              "name": "null"
+            }
+          ],
+          "description": "Component Mapping: light.target"
+        }
+      ]
+    },
+    {
+      "name": "a-link",
+      "description": "---\ntitle: <a-link>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-link.js\n---\n\nThe link primitive provides a compact API to define links that resembles\nthe traditional `<a>` tag.\n\n## Attributes\n\n| Attribute             | Component Mapping              | Default Value |\n|-----------------------|--------------------------------|---------------|\n| href                  | link.href                      |               |\n| title                 | link.title                     |               |\n| src                   | link.src                       |               |\n",
+      "attributes": [
+        {
+          "name": "href",
+          "values": [
+            {
+              "name": ""
+            }
+          ],
+          "description": "Component Mapping: link.href"
+        },
+        {
+          "name": "title",
+          "values": [
+            {
+              "name": ""
+            }
+          ],
+          "description": "Component Mapping: link.title"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": ""
+            }
+          ],
+          "description": "Component Mapping: link.src"
+        }
+      ]
+    },
+    {
+      "name": "a-obj-model",
+      "description": "---\ntitle: <a-obj-model>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-obj-model.js\n---\n\n> We recommend glTF for distributing assets in production over the web. Check\n> out using the [glTF model primitive](a-gltf-model.md). You can\n> either instead export to COLLADA and use [the\n> converter](https://cesiumjs.org/convertmodel.html) or try out the [OBJ\n> converter](https://github.com/AnalyticalGraphicsInc/OBJ2GLTF).\n\nThe .OBJ model primitive displays a 3D Wavefront model.\n\n## Example\n\n```html\n<a-scene>\n  <a-assets>\n    <a-asset-item id=\"crate-obj\" src=\"crate.obj\"></a-asset-item>\n    <a-asset-item id=\"crate-mtl\" src=\"crate.mtl\"></a-asset-item>\n  </a-assets>\n\n  <!-- Using the asset management system. -->\n  <a-obj-model src=\"#crate-obj\" mtl=\"#crate-mtl\"></a-obj-model>\n\n  <!-- Defining the URL inline. Not recommended but may be more comfortable. -->\n  <a-obj-model src=\"crate.obj\" mtl=\"crate.mtl\"></a-obj-model>\n</a-scene>\n```\n\n## Attribute\n\n| Attribute | Component Mapping | Default Value |\n|-----------|-------------------|---------------|\n| mtl       | obj-model.mtl     | null          |\n| src       | obj-model.obj     | null          |\n\n## Troubleshooting\n\nSee [Introduction → 3D Models → Troubleshooting](../introduction/models.md#troubleshooting).\n",
+      "attributes": [
+        {
+          "name": "mtl",
+          "values": [
+            {
+              "name": "null"
+            }
+          ],
+          "description": "Component Mapping: obj-model.mtl"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "null"
+            }
+          ],
+          "description": "Component Mapping: obj-model.obj"
+        }
+      ]
+    },
+    {
+      "name": "a-octahedron",
+      "description": "---\ntitle: <a-octahedron>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\n## Example\n\n```html\n<a-octahedron color=\"#FF926B\" radius=\"5\"></a-octahedron>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| detail                           | geometry.detail                        | 0             |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| radius                           | geometry.radius                        | 1             |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "detail",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.detail"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-plane",
+      "description": "---\ntitle: <a-plane>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\n[geometry]: ../components/geometry.md\n\nThe plane primitive creates flat surfaces using the [geometry][geometry]\ncomponent with the type set to `plane`.\n\n## Example\n\n```html\n<a-scene>\n  <a-assets>\n    <img id=\"ground\" src=\"ground.jpg\">\n  </a-assets>\n\n  <!-- Basic plane. -->\n  <a-plane color=\"#CCC\" height=\"20\" width=\"20\"></a-plane>\n\n  <!-- Textured plane parallel to ground. -->\n  <a-plane src=\"#ground\" height=\"100\" width=\"100\" rotation=\"-90 0 0\"></a-plane>\n</a-scene>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | geometry.height                        | 1             |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments-height                  | geometry.segmentsHeight                | 1             |\n| segments-width                   | geometry.segmentsWidth                 | 1             |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| width                            | geometry.width                         | 1             |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n\n## Parallelizing to the Ground\n\nTo make a plane parallel to the ground or make a plane the ground itself,\nrotate it around the X-axis:\n\n```html\n<a-plane rotation=\"-90 0 0\"></a-plane>\n```\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-width",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsWidth"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-ring",
+      "description": "---\ntitle: <a-ring>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\nThe ring primitive creates a ring or disc shape.\n\n## Example\n\n```html\n<a-assets>\n  <img id=\"texture\" src=\"texture.png\">\n</a-assets>\n\n<!-- Basic ring. -->\n<a-ring color=\"teal\" radius-inner=\"1\" radius-outer=\"2\"></a-ring>\n\n<!-- Textured ring. -->\n<a-ring src=\"#texture\"></a-ring>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| radius-inner                     | geometry.radiusInner                   | 0.8           |\n| radius-outer                     | geometry.radiusOuter                   | 1.2           |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments-phi                     | geometry.segmentsPhi                   | 10            |\n| segments-theta                   | geometry.segmentsTheta                 | 32            |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| theta-length                     | geometry.thetaLength                   | 360           |\n| theta-start                      | geometry.thetaStart                    | 0             |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "radius-inner",
+          "values": [
+            {
+              "name": "0.8"
+            }
+          ],
+          "description": "Component Mapping: geometry.radiusInner"
+        },
+        {
+          "name": "radius-outer",
+          "values": [
+            {
+              "name": "1.2"
+            }
+          ],
+          "description": "Component Mapping: geometry.radiusOuter"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-phi",
+          "values": [
+            {
+              "name": "10"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsPhi"
+        },
+        {
+          "name": "segments-theta",
+          "values": [
+            {
+              "name": "32"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsTheta"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "theta-length",
+          "values": [
+            {
+              "name": "360"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaLength"
+        },
+        {
+          "name": "theta-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaStart"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-sky",
+      "description": "---\ntitle: <a-sky>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-sky.js\nexamples:\n  - title: Adding a Sky\n    src: https://glitch.com/edit/#!/aframe-adding-a-sky?path=index.html\n  - title: Changing the Sky\n    src: https://glitch.com/edit/#!/aframe-changing-the-sky?path=index.html\n---\n\nThe sky primitive adds a background color or 360&deg; image to a scene.  A sky\nis a large sphere with a color or texture mapped to the inside.\n\n## Example\n\nAn equirectangular image as a background:\n\n```html\n<a-scene>\n  <a-assets>\n    <img id=\"sky\" src=\"sky.png\">\n  </a-assets>\n  <a-sky src=\"#sky\"></a-sky>\n</a-scene>\n```\n\nA plain color as a background:\n\n```html\n<a-sky color=\"#6EBAA7\"></a-sky>\n```\n\n## Attributes\n\n| Attribute       | Component Mapping       | Default Value |\n| --------        | -----------------       | ------------- |\n| color           | material.color          | #FFF          |\n| metalness       | material.metalness      | 0             |\n| opacity         | material.opacity        | 1             |\n| phi-length      | geometry.phiLength      | 360           |\n| phi-start       | geometry.phiStart       | 0             |\n| radius          | geometry.radius         | 500           |\n| repeat          | material.repeat         | None          |\n| roughness       | material.roughness      | 0.5           |\n| segments-height | geometry.segmentsHeight | 32            |\n| segments-width  | geometry.segmentsWidth  | 64            |\n| shader          | material.shader         | flat          |\n| side            | material.side           | back          |\n| src             | material.src            | None          |\n| theta-length    | geometry.thetaLength    | 180           |\n| theta-start     | geometry.thetaStart     | 0             |\n| transparent     | material.transparent    | false         |\n\n## Equirectangular Image\n\nTo be seamless, images should be\n[equirectangular](https://en.wikipedia.org/wiki/Equirectangular_projection). We\ncan find some sample equirectangular images on\n[Flickr](https://www.flickr.com/groups/equirectangular/). To take an\nequirectangular photo, check out this [360-degree photography\nguide](http://ngokevin.com/blog/360-photography/).\n",
+      "attributes": [
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "opacity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.opacity"
+        },
+        {
+          "name": "phi-length",
+          "values": [
+            {
+              "name": "360"
+            }
+          ],
+          "description": "Component Mapping: geometry.phiLength"
+        },
+        {
+          "name": "phi-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.phiStart"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "500"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "32"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-width",
+          "values": [
+            {
+              "name": "64"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsWidth"
+        },
+        {
+          "name": "shader",
+          "values": [
+            {
+              "name": "flat"
+            }
+          ],
+          "description": "Component Mapping: material.shader"
+        },
+        {
+          "name": "side",
+          "values": [
+            {
+              "name": "back"
+            }
+          ],
+          "description": "Component Mapping: material.side"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "theta-length",
+          "values": [
+            {
+              "name": "180"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaLength"
+        },
+        {
+          "name": "theta-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaStart"
+        },
+        {
+          "name": "transparent",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.transparent"
+        }
+      ]
+    },
+    {
+      "name": "a-sound",
+      "description": "---\ntitle: <a-sound>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-sound.js\n---\n\nThe sound primitive wraps the [sound component](../components/sound.md).\n\n## Example\n\n```html\n<a-scene>\n  <a-sound src=\"src: url(click.mp3)\" autoplay=\"true\" position=\"0 2 5\"></a-sound>\n</a-scene>\n```\n\n## Attributes\n\n| Attribute | Component Mapping | Default Value |\n|-----------|-------------------|---------------|\n| autoplay  | sound.autoplay    | false         |\n| loop      | sound.loop        | false         |\n| on        | sound.on          | null          |\n| src       | sound.src         | null          |\n| volume    | sound.volume      | 1             |\n",
+      "attributes": [
+        {
+          "name": "autoplay",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: sound.autoplay"
+        },
+        {
+          "name": "loop",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: sound.loop"
+        },
+        {
+          "name": "on",
+          "values": [
+            {
+              "name": "null"
+            }
+          ],
+          "description": "Component Mapping: sound.on"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "null"
+            }
+          ],
+          "description": "Component Mapping: sound.src"
+        },
+        {
+          "name": "volume",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: sound.volume"
+        }
+      ]
+    },
+    {
+      "name": "a-sphere",
+      "description": "---\ntitle: <a-sphere>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\nThe sphere primitive creates a spherical or polyhedron shapes. It wraps an entity that prescribes the [geometry component](../components/geometry.md) with its geometric primitive set to `sphere`.\n\n## Example\n\n```html\n<a-sphere color=\"yellow\" radius=\"5\"></a-sphere>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| phi-length                       | geometry.phiLength                     | 360           |\n| phi-start                        | geometry.phiStart                      | 0             |\n| radius                           | geometry.radius                        | 1             |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments-height                  | geometry.segmentsHeight                | 18            |\n| segments-width                   | geometry.segmentsWidth                 | 36            |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| theta-length                     | geometry.thetaLength                   | 180           |\n| theta-start                      | geometry.thetaStart                    | 0             |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "phi-length",
+          "values": [
+            {
+              "name": "360"
+            }
+          ],
+          "description": "Component Mapping: geometry.phiLength"
+        },
+        {
+          "name": "phi-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.phiStart"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "18"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-width",
+          "values": [
+            {
+              "name": "36"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsWidth"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "theta-length",
+          "values": [
+            {
+              "name": "180"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaLength"
+        },
+        {
+          "name": "theta-start",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.thetaStart"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-tetrahedron",
+      "description": "---\ntitle: <a-tetrahedron>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\n## Example\n\n```html\n<a-tetrahedron color=\"#FF926B\" radius=\"5\"></a-tetrahedron>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| detail                           | geometry.detail                        | 0             |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| radius                           | geometry.radius                        | 1             |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "detail",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: geometry.detail"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-text",
+      "description": "---\ntitle: <a-text>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-text.js\n---\n\n[text]: ../components/text.md\n\nWraps the [text component][text].\n\n## Example\n\n```html\n<a-text value=\"Hello, World!\"></a-text>\n```\n\n## Attributes\n\n| Attribute      | Component Mapping  |\n|----------------|--------------------|\n| align          | text.align         |\n| alpha-test     | text.alphaTest     |\n| anchor         | text.anchor        |\n| baseline       | text.baseline      |\n| color          | text.color         |\n| font           | text.font          |\n| font-image     | text.fontImage     |\n| height         | text.height        |\n| letter-spacing | text.letterSpacing |\n| line-height    | text.lineHeight    |\n| opacity        | text.opacity       |\n| shader         | text.shader        |\n| side           | text.side          |\n| tab-size       | text.tabSize       |\n| transparent    | text.transparent   |\n| value          | text.value         |\n| white-space    | text.whiteSpace    |\n| width          | text.width         |\n| wrap-count     | text.wrapCount     |\n| wrap-pixels    | text.wrapPixels    |\n| z-offset       | text.zOffset       |\n\n## Limitations\n\nTo interact with the text via raycaster or cursor, we need to add geometry like a plane to the text.\n\n```html\n<a-text value=\"Now Interactable\" geometry=\"primitive:plane\"></a-text>\n```\n",
+      "attributes": [
+        {
+          "name": "align",
+          "values": [],
+          "description": "Component Mapping: text.align"
+        },
+        {
+          "name": "alpha-test",
+          "values": [],
+          "description": "Component Mapping: text.alphaTest"
+        },
+        {
+          "name": "anchor",
+          "values": [],
+          "description": "Component Mapping: text.anchor"
+        },
+        {
+          "name": "baseline",
+          "values": [],
+          "description": "Component Mapping: text.baseline"
+        },
+        {
+          "name": "color",
+          "values": [],
+          "description": "Component Mapping: text.color"
+        },
+        {
+          "name": "font",
+          "values": [],
+          "description": "Component Mapping: text.font"
+        },
+        {
+          "name": "font-image",
+          "values": [],
+          "description": "Component Mapping: text.fontImage"
+        },
+        {
+          "name": "height",
+          "values": [],
+          "description": "Component Mapping: text.height"
+        },
+        {
+          "name": "letter-spacing",
+          "values": [],
+          "description": "Component Mapping: text.letterSpacing"
+        },
+        {
+          "name": "line-height",
+          "values": [],
+          "description": "Component Mapping: text.lineHeight"
+        },
+        {
+          "name": "opacity",
+          "values": [],
+          "description": "Component Mapping: text.opacity"
+        },
+        {
+          "name": "shader",
+          "values": [],
+          "description": "Component Mapping: text.shader"
+        },
+        {
+          "name": "side",
+          "values": [],
+          "description": "Component Mapping: text.side"
+        },
+        {
+          "name": "tab-size",
+          "values": [],
+          "description": "Component Mapping: text.tabSize"
+        },
+        {
+          "name": "transparent",
+          "values": [],
+          "description": "Component Mapping: text.transparent"
+        },
+        {
+          "name": "value",
+          "values": [],
+          "description": "Component Mapping: text.value"
+        },
+        {
+          "name": "white-space",
+          "values": [],
+          "description": "Component Mapping: text.whiteSpace"
+        },
+        {
+          "name": "width",
+          "values": [],
+          "description": "Component Mapping: text.width"
+        },
+        {
+          "name": "wrap-count",
+          "values": [],
+          "description": "Component Mapping: text.wrapCount"
+        },
+        {
+          "name": "wrap-pixels",
+          "values": [],
+          "description": "Component Mapping: text.wrapPixels"
+        },
+        {
+          "name": "z-offset",
+          "values": [],
+          "description": "Component Mapping: text.zOffset"
+        }
+      ]
+    },
+    {
+      "name": "a-torus-knot",
+      "description": "---\ntitle: <a-torus-knot>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\n[geometry]: ../components/geometry.md\n\nThe torus knot primitive creates pretzel shapes using the [geometry][geometry]\ncomponent with the type set to `torusKnot`.\n\n## Example\n\n```html\n<a-torus-knot color=\"#B84A39\" arc=\"180\" p=\"2\" q=\"7\" radius=\"5\" radius-tubular=\"0.1\"></a-torus-knot>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| p                                | geometry.p                             | 2             |\n| q                                | geometry.q                             | 3             |\n| radius                           | geometry.radius                        | 1             |\n| radius-tubular                   | geometry.radiusTubular                 | 0.2           |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments-radial                  | geometry.segmentsRadial                | 8             |\n| segments-tubular                 | geometry.segmentsTubular               | 100           |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "p",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: geometry.p"
+        },
+        {
+          "name": "q",
+          "values": [
+            {
+              "name": "3"
+            }
+          ],
+          "description": "Component Mapping: geometry.q"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "radius-tubular",
+          "values": [
+            {
+              "name": "0.2"
+            }
+          ],
+          "description": "Component Mapping: geometry.radiusTubular"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-radial",
+          "values": [
+            {
+              "name": "8"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsRadial"
+        },
+        {
+          "name": "segments-tubular",
+          "values": [
+            {
+              "name": "100"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsTubular"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-torus",
+      "description": "---\ntitle: <a-torus>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\n[geometry]: ../components/geometry.md\n\nThe torus primitive creates donut or tube shapes using the [geometry][geometry]\ncomponent with the type set to `torus`.\n\n## Example\n\n```html\n<a-torus color=\"#43A367\" arc=\"270\" radius=\"5\" radius-tubular=\"0.1\"></a-torus>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| arc                              | geometry.arc                           | 360           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| radius                           | geometry.radius                        | 1             |\n| radius-tubular                   | geometry.radiusTubular                 | 0.2           |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| segments-radial                  | geometry.segmentsRadial                | 36            |\n| segments-tubular                 | geometry.segmentsTubular               | 32            |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "arc",
+          "values": [
+            {
+              "name": "360"
+            }
+          ],
+          "description": "Component Mapping: geometry.arc"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "radius-tubular",
+          "values": [
+            {
+              "name": "0.2"
+            }
+          ],
+          "description": "Component Mapping: geometry.radiusTubular"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-radial",
+          "values": [
+            {
+              "name": "36"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsRadial"
+        },
+        {
+          "name": "segments-tubular",
+          "values": [
+            {
+              "name": "32"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsTubular"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-triangle",
+      "description": "---\ntitle: <a-triangle>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/meshPrimitives.js\n---\n\nThe triangle primitive creates triangle surfaces using the [geometry][geometry]\ncomponent with the type set to `triangle`.\n\n## Example\n\n```html\n<a-scene>\n  <a-assets>\n    <img id=\"platform\" src=\"https://i.imgur.com/mYmmbrp.jpg\">\n  </a-assets>\n\n  <!-- Basic triangle. -->\n  <a-triangle color=\"#CCC\" vertex-c=\"1 -1 0\"></a-triangle>\n\n  <!-- Textured triangle parallel to ground. -->\n  <a-triangle src=\"#platform\" rotation=\"-90 0 0\"></a-triangle>\n</a-scene>\n```\n\n## Attributes\n\n| Attribute                        | Component Mapping                      | Default Value |\n| --------                         | -----------------                      | ------------- |\n| ambient-occlusion-map            | material.ambientOcclusionMap           | None          |\n| ambient-occlusion-map-intensity  | material.ambientOcclusionMapIntensity  | 1             |\n| ambient-occlusion-texture-offset | material.ambientOcclusionTextureOffset | 0 0           |\n| ambient-occlusion-texture-repeat | material.ambientOcclusionTextureRepeat | 1 1           |\n| color                            | material.color                         | #FFF          |\n| displacement-bias                | material.displacementBias              | 0.5           |\n| displacement-map                 | material.displacementMap               | None          |\n| displacement-scale               | material.displacementScale             | 1             |\n| displacement-texture-offset      | material.displacementTextureOffset     | 0 0           |\n| displacement-texture-repeat      | material.displacementTextureRepeat     | 1 1           |\n| env-map                          | material.envMap                        | None          |\n| fog                              | material.fog                           | true          |\n| height                           | material.height                        | 256           |\n| metalness                        | material.metalness                     | 0             |\n| normal-map                       | material.normalMap                     | None          |\n| normal-scale                     | material.normalScale                   | 1 1           |\n| normal-texture-offset            | material.normalTextureOffset           | 0 0           |\n| normal-texture-repeat            | material.normalTextureRepeat           | 1 1           |\n| repeat                           | material.repeat                        | 1 1           |\n| roughness                        | material.roughness                     | 0.5           |\n| spherical-env-map                | material.sphericalEnvMap               | None          |\n| src                              | material.src                           | None          |\n| vertex-a                         | geometry.vertexA                       | 0  0.5 0   |\n| vertex-b                         | geometry.vertexB                       | -0.5 -0.5 0   |\n| vertex-c                         | geometry.vertexC                       |  0.5 -0.5 0   |\n| width                            | material.width                         | 512           |\n| wireframe                        | material.wireframe                     | false         |\n| wireframe-linewidth              | material.wireframeLinewidth            | 2             |\n\n## Parallelizing to the Ground\n\nTo make a triangle parallel to the ground, rotate it around the X-axis:\n\n```html\n<a-triangle rotation=\"-90 0 0\"></a-triangle>\n```\n\n[geometry]: ../components/geometry.md\n",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMap"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionMapIntensity"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureOffset"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.ambientOcclusionTextureRepeat"
+        },
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "displacement-bias",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.displacementBias"
+        },
+        {
+          "name": "displacement-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.displacementMap"
+        },
+        {
+          "name": "displacement-scale",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementScale"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureOffset"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.displacementTextureRepeat"
+        },
+        {
+          "name": "env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.envMap"
+        },
+        {
+          "name": "fog",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: material.fog"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "256"
+            }
+          ],
+          "description": "Component Mapping: material.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "normal-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.normalMap"
+        },
+        {
+          "name": "normal-scale",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalScale"
+        },
+        {
+          "name": "normal-texture-offset",
+          "values": [
+            {
+              "name": "0 0"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureOffset"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.normalTextureRepeat"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "1 1"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "spherical-env-map",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.sphericalEnvMap"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "vertex-a",
+          "values": [
+            {
+              "name": "0  0.5 0"
+            }
+          ],
+          "description": "Component Mapping: geometry.vertexA"
+        },
+        {
+          "name": "vertex-b",
+          "values": [
+            {
+              "name": "-0.5 -0.5 0"
+            }
+          ],
+          "description": "Component Mapping: geometry.vertexB"
+        },
+        {
+          "name": "vertex-c",
+          "values": [
+            {
+              "name": "0.5 -0.5 0"
+            }
+          ],
+          "description": "Component Mapping: geometry.vertexC"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "512"
+            }
+          ],
+          "description": "Component Mapping: material.width"
+        },
+        {
+          "name": "wireframe",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.wireframe"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "values": [
+            {
+              "name": "2"
+            }
+          ],
+          "description": "Component Mapping: material.wireframeLinewidth"
+        }
+      ]
+    },
+    {
+      "name": "a-video",
+      "description": "---\ntitle: <a-video>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-video.js\n---\n\nThe video primitive plays a video as a texture on a flat plane.\n\n## Example\n\n```html\n<a-scene>\n  <a-assets>\n    <video id=\"penguin-sledding\" autoplay loop=\"true\" src=\"penguin-sledding.mp4\"></video>\n  </a-assets>\n\n  <!-- Using the asset management system. -->\n  <a-video src=\"#penguin-sledding\" width=\"16\" height=\"9\" position=\"0 0 -20\"></a-video>\n\n  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->\n  <a-video src=\"airbending.mp4\"></a-video>\n</a-scene>\n```\n\n## Attributes\n\n| Attribute       | Component Mapping       | Default Value |\n| --------        | -----------------       | ------------- |\n| color           | material.color          | #FFF          |\n| height          | geometry.height         | 1.75          |\n| metalness       | material.metalness      | 0             |\n| opacity         | material.opacity        | 1             |\n| repeat          | material.repeat         | None          |\n| roughness       | material.roughness      | 0.5           |\n| segments-height | geometry.segmentsHeight | 1             |\n| segments-width  | geometry.segmentsWidth  | 1             |\n| shader          | material.shader         | flat          |\n| side            | material.side           | front         |\n| src             | material.src            | None          |\n| transparent     | material.transparent    | false         |\n| width           | geometry.width          | 3             |\n\n## Caveats\n\niOS has a lot of restrictions on playing videos in the browser. To play an inline video texture, we must:\n\n- Set the `<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">` meta tag. A-Frame will inject this if missing.\n- Set the `webkit-playsinline` and `playsinline` attribute to the video element. A-Frame will add this to all videos if missing).\n\nSince iOS 11, iOS has required user interaction to trigger video playback. This is also true on a number of Android device and\nbrowser combinations.\n\n## Fine-Tuning\n\nEnsuring that the video is not distorted by stretching requires us to appropriately set the `width` and `height` preserving the original aspect ratio of the video. This properties are set in meters, don't confuse with pixels.\n\nFor example, a 2:1 video:\n\n```html\n<a-video src=\"#myvideo\" width=\"3\" height=\"1.5\"></a-video>\n```\n\n\n",
+      "attributes": [
+        {
+          "name": "color",
+          "values": [
+            {
+              "name": "#FFF"
+            }
+          ],
+          "description": "Component Mapping: material.color"
+        },
+        {
+          "name": "height",
+          "values": [
+            {
+              "name": "1.75"
+            }
+          ],
+          "description": "Component Mapping: geometry.height"
+        },
+        {
+          "name": "metalness",
+          "values": [
+            {
+              "name": "0"
+            }
+          ],
+          "description": "Component Mapping: material.metalness"
+        },
+        {
+          "name": "opacity",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: material.opacity"
+        },
+        {
+          "name": "repeat",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.repeat"
+        },
+        {
+          "name": "roughness",
+          "values": [
+            {
+              "name": "0.5"
+            }
+          ],
+          "description": "Component Mapping: material.roughness"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-width",
+          "values": [
+            {
+              "name": "1"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsWidth"
+        },
+        {
+          "name": "shader",
+          "values": [
+            {
+              "name": "flat"
+            }
+          ],
+          "description": "Component Mapping: material.shader"
+        },
+        {
+          "name": "side",
+          "values": [
+            {
+              "name": "front"
+            }
+          ],
+          "description": "Component Mapping: material.side"
+        },
+        {
+          "name": "src",
+          "values": [
+            {
+              "name": "None"
+            }
+          ],
+          "description": "Component Mapping: material.src"
+        },
+        {
+          "name": "transparent",
+          "values": [
+            {
+              "name": "false"
+            }
+          ],
+          "description": "Component Mapping: material.transparent"
+        },
+        {
+          "name": "width",
+          "values": [
+            {
+              "name": "3"
+            }
+          ],
+          "description": "Component Mapping: geometry.width"
+        }
+      ]
+    },
+    {
+      "name": "a-videosphere",
+      "description": "---\ntitle: <a-videosphere>\ntype: primitives\nlayout: docs\nparent_section: primitives\nsource_code: src/extras/primitives/primitives/a-videosphere.js\nexamples:\n  - title: Adding a Videosphere\n    src: https://glitch.com/edit/#!/aframe-360-video-example?path=index.html\n---\n\nThe videosphere primitive plays 360&deg; videos in the background of the scene.\nVideospheres are a large sphere with the video texture mapped to the inside.\n\n## Examples\n\n```html\n<a-scene>\n  <a-assets>\n    <video id=\"antarctica\" autoplay loop=\"true\" src=\"antarctica.mp4\"> </video>\n  </a-assets>\n\n  <!-- Using the asset management system. -->\n  <a-videosphere src=\"#antarctica\"></a-videosphere>\n\n  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->\n  <a-videosphere src=\"africa.mp4\"></a-videosphere>\n</a-scene>\n```\n\n## Methods \n\nMore indepth knowledge on the methods to alter video material can be seen over [here](../components/material.html#video-textures)\n\n```javascript\n// to set specific time of video\ndocument.querySelector(\"#antarctica\").components.material.data.src.currentTime = 0 // start of video\n\n// to play the videosphere\ndocument.querySelector(\"#antarctica\").components.material.material.map.image.play();\n```\n\n## Attributes\n\nNote that the videosphere primitive inherits [common attributes](./common-attributes.md).\n\n| Attribute       | Component Mapping       | Default Value |\n|-----------------|-------------------------|---------------|\n| autoplay        | `<video>`.autoplay      | true          |\n| crossOrigin     | `<video>`.crossOrigin   | anonymous     |\n| loop            | `<video>`.loop          | true          |\n| radius          | geometry.radius         | 5000          |\n| segments-height | geometry.segmentsHeight | 64            |\n| segments-width  | geometry.segmentsWidth  | 64            |\n\n\n\n## Equirectangular Video\n\n[equirectangular]: https://en.wikipedia.org/wiki/Equirectangular_projection\n\nTo be seamless, source videos should be [equirectangular][equirectangular].\n\n## Caveats\n\niOS has a lot of restrictions on playing videos in the browser. To play an inline video texture, we must:\n\n- Set the `<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">` meta tag. A-Frame will inject this if missing.\n- Set the `webkit-playsinline` and `playsinline` attribute to the video element. A-Frame will add this to all videos if missing).\n- Pin the webpage to the iOS homescreen.\n\nInline video support on iOS 10 may change this. On certain Android devices or\nbrowsers, we must:\n\n[android-touch-bug]: https://bugs.chromium.org/p/chromium/issues/detail?id=178297\n\n- Require user interaction to trigger the video (such as a click or tap event). See [Chromium Bug 178297][android-touch-bug]\n",
+      "attributes": [
+        {
+          "name": "autoplay",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: `<video>`.autoplay"
+        },
+        {
+          "name": "crossOrigin",
+          "values": [
+            {
+              "name": "anonymous"
+            }
+          ],
+          "description": "Component Mapping: `<video>`.crossOrigin"
+        },
+        {
+          "name": "loop",
+          "values": [
+            {
+              "name": "true"
+            }
+          ],
+          "description": "Component Mapping: `<video>`.loop"
+        },
+        {
+          "name": "radius",
+          "values": [
+            {
+              "name": "5000"
+            }
+          ],
+          "description": "Component Mapping: geometry.radius"
+        },
+        {
+          "name": "segments-height",
+          "values": [
+            {
+              "name": "64"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsHeight"
+        },
+        {
+          "name": "segments-width",
+          "values": [
+            {
+              "name": "64"
+            }
+          ],
+          "description": "Component Mapping: geometry.segmentsWidth"
+        }
+      ]
+    }
+  ]
+}
