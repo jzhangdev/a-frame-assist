@@ -16,7 +16,6 @@ const docsPath = path.resolve(__dirname, "../node_modules/aframe/docs/");
     async ({ filename, path }) => {
       const file = await fs.readFile(path);
       const tokens = marked.lexer(file.toString());
-      console.log(tokens);
 
       const table = tokens.find(
         (token) => token.type === "table"

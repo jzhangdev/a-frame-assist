@@ -1,9 +1,11 @@
 {
   "name": "a-frame-assist",
+  "displayName": "A-Frame Assist",
   "version": "0.0.1",
   "description": "VS Code Extension for A-Frame",
   "scripts": {
-    "build:html-data": "tsx scripts/generate-html-data.ts"
+    "build:html-data": "tsx scripts/generate-html-data.ts",
+    "vscode:prepublish": "npm run build:html-data"
   },
   "keywords": [
     "a-frame",
@@ -27,6 +29,7 @@
     "tsx": "^4.16.2",
     "typescript": "^5.5.4"
   },
+  "icon": "assets/aframe-logo.png",
   "engines": {
     "vscode": "^1.22.0"
   },
@@ -36,5 +39,9 @@
         "./a-frame.html-data.json"
       ]
     }
-  }
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ]
 }
